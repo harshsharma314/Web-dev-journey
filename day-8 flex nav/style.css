@@ -1,0 +1,29 @@
+*{box-sizing: border-box;
+}
+
+header{
+    background-color: lightblue;
+}
+label{
+    font-weight: bold;
+}
+#highlight{
+    color: orange;
+    font-weight: bold;
+}
+.hobby-list{
+    padding:10px 10px 10px 25px;
+    margin: 20px;
+    border: 2px solid black;
+    width: 100px;
+}
+nav a {
+      text-decoration: none;
+    }
+    a:hover{
+        color: orange;
+     }
+nav{
+    display: flex;
+    gap: 20px;
+}
