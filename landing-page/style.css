@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+}
+:root {
+  --main: #16a34a;     /* blue, for the header and accents */
+  --light: #eff6ff;    /* very pale blue, for the page background */
+  --dark: #1e293b;     /* dark slate, for text */
+  --accent: #f59e0b;   /* orange, for hover effects */
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color:var(--dark);
+}
+header{
+    background-color: var(--main);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header{
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 16px;
+}
+header h1{
+    color: white;
+}
+@media(min-width:900px){
+    header{ justify-content: space-between; padding: 10px 60px; }
+    header h1{
+        font-size: 32px;
+    }
+}
+nav{
+    display: flex; gap: 20px;
+}
+nav a{
+    color: white;
+}
+a:hover{
+    color: var(--accent);
+}
+.hero { text-align: center; }
+.lists{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center ;
+    gap: 20px;
+}
+.list-box h2{
+    font-size: 20px;
+}
+.list-box{
+    background-color: white;
+    border-color: #16a34a;
+    justify-content: center;
+    border: 2px solid black ;
+    padding: 16px 24px;
+    border-radius: 50px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.profile-img{
+    display: block;
+     width: 200px;
+     height: 200px;
+     object-fit: cover;
+     border-radius: 50%;
+     margin: 20px auto;
+}
+.contact h2{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+button:hover {
+  background-color: var(--accent);
+}
+table{
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+th, td {
+    border: 1px solid #222;
+    padding: 8px 16px;
+}
+th {
+  background-color: var(--main);
+  color: white;
+}
+.circles{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 220px);
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.circle {
+    background-color: var(--main);
+    color: white;
+    width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 2px solid var(--main);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 16px;
+   max-width: 220px;
+}
+.circle {
+  transition: background-color 0.2s ease;
+}
+.circle:hover{
+    background-color: rgb(51, 2, 2);
+}
+@media(min-width: 900px){
+    .circles{grid-template-columns: repeat(3, 220px);
+   justify-content: center; 
+    }
+
+}
+footer {
+  background-color: var(--dark);
+  color: white;
+  text-align: center;
+  padding: 16px;
+}
